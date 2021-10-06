@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     setlocale(LC_ALL, "Rus");
     int n, a, d;
-    cout << "Введите число N, первый член геометрической прогрессии и знаменатель:";
+    cout << "Введите число N, первый член геометрической прогрессии и знаменатель: ";
     cin >> n >> a >> d;
     vector <int> w(n);
     w[0] = a;
