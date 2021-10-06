@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     setlocale(LC_ALL, "Rus");
     int n;
-    cout << "Введите число n:";
+    cout << "Введите число n: ";
     cin >> n;
     vector <int> w(n);
     w[0] = 1;
