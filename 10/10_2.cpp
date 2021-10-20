@@ -7,7 +7,7 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
     int a, b, c;
-    cout << "Введите целые положительные целые числа a, в, c: ";
+    cout << "Введите целые положительные числа a, в, c: ";
     cin >> a >> b >> c;
     a = abs(a);
     b = abs(b);
