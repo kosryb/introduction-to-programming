@@ -7,7 +7,7 @@ int main()
 {
     setlocale(LC_ALL, "Rus");
     double a, b;
-    cout << "Ââåäèòå ÷èñëà a è b (ax + b = 0): ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð° a Ð¸ b (ax + b = 0): ";
     cin >> a >> b;
     cout << "x = " << -b/a;
 }
