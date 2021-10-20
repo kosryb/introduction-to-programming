@@ -9,7 +9,7 @@ int main()
     int a;
     cout << "Введите число A" << endl;
     cin >> a;
-    int w = a * a * a;
+    int w = pow(a, 4);
     int q = a * a * a;
-    cout << "A^8 = " << w * w * w * w * q;
+    cout << "A^8 = " << w * w * w * q;
 } 
