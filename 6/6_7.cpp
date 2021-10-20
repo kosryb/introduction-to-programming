@@ -11,5 +11,5 @@ int main()
     cin >> a;
     int w = pow(a, 4);
     int q = a * a * a;
-    cout << "A^8 = " << w * w * w * q;
+    cout << "A^15 = " << w * w * w * q;
 } 
