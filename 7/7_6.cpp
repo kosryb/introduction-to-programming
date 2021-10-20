@@ -7,9 +7,9 @@ int main()
 {
     setlocale(LC_ALL, "Rus");
     double a1, b1, a2, b2, c1, c2, d, d1, d2;
-    cout << "Ââåäèòå ÷èñëà a1, b1, c1 (a1*x + b1*y = c1): ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð° a1, b1, c1 (a1*x + b1*y = c1): ";
     cin >> a1 >> b1 >> c1;
-    cout << "Ââåäèòå ÷èñëà a2, b2, c2 (a2*x + b2*y = c2): ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð° a2, b2, c2 (a2*x + b2*y = c2): ";
     cin >> a2 >> b2 >> c2;
     d = a1 * b2 - b1 * a2;
     d1 = c1 * b2 - b1 * c2;
