@@ -12,6 +12,7 @@ int main()
     double s = 1;
     cout << "Введите целое число N: ";
     cin >> n;
+    n = abs(n);
     for (int i = 1; i <= n; i++) {
         s = s * (1 + 0.1 * i);
     }
