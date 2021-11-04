@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+#include <locale.h>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a;
+    cout << "Введите целое число А (1 <= A <= 999) ";
+    cin >> a;
+    if (a < 1 || a > 999) {
+        cout << "ERROR";
+        return 0;
+    }
+    cout << ((abs(a) % 2 == 0)? "четное" : "нечетное") << " ";
+    if (a / 10 == 0)
+        cout << "однозначное";
+    else if (a / 100 == 0)
+        cout << "двузначное";
+    else
+        cout << "трехзначное";
+    cout << " число";
+}
