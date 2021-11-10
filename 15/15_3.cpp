@@ -3,15 +3,20 @@
 #include <locale.h>
 using namespace std;
 
+double RingS(double r1, double r2)
+{
+    return acos(-1) * (r1 * r1 - r2 * r2);
+}
+
 int main()
 {
-    setlocale(LC_ALL, "Rus");
-    int a, b;
-    cout << "Введите положительные целые числа а и в, если a > b: ";
-    cin >> a >> b;
-    if (!(a > b)) {
-        cout << "Ошибка";
-        return 0;
+    setlocale(LC_ALL, "Russian");
+    double r1, r2;
+    for (int i = 0; i < 3; i++) {
+        cout << "r1 > r2\nr1 = ";
+        cin >> r1;
+        cout << "r2 = ";
+        cin >> r1;
+        cout << "S = " << RingS(r1, r2) << endl;
     }
-    cout << "Длина незанятой части отрезка A = " << a - a / b * b;
 }
