@@ -3,16 +3,24 @@
 #include <locale.h>
 using namespace std;
 
+int NOD(int a, int b) {
+    if (a < b) {
+        swap(a, b);
+    }
+    while (a % b != 0) {
+        a = a % b;
+        swap(a, b);
+    }
+    return b;
+}
+
 int main()
 {
     setlocale(LC_ALL, "Rus");
-    int n;
-    char s;
-    cout << "Ââåäèòå òðåõçíà÷íîå ÷èñëî n: ";
-    cin >> n;
-    if (n < 0)
-        s = '-';
-    n = abs(n);
-    n = n / 100 + n % 10 * 10 + n % 100 / 10 * 100;
-    cout << "×èñëî, ïîëó÷åííîå ïðè ïåðåñòàíîâêå öèôð èñõîäíîãî ÷èñëà = " << s << n;
+    int a, b;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†ÐµÐ»Ð¾Ðµ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ A = ";
+    cin >> a;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†ÐµÐ»Ð¾Ðµ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ B = ";
+    cin >> b; 
+    cout << NOD(a, b) << endl;
 }
