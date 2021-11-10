@@ -3,16 +3,21 @@
 #include <locale.h>
 using namespace std;
 
+double Fact2(int n)
+{
+    long double f = 1;
+    for (; n > 1; n -= 2)
+        f *= n;
+    return f;
+}
+
 int main()
 {
-    setlocale(LC_ALL, "Rus");
+    setlocale(LC_ALL, "Russian");
     int n;
-    char s;
-    cout << "Введите трехзначное число n: ";
+    cout << "Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ n (n > 0): ";
     cin >> n;
-    if (n < 0)
-        s = '-';
-    n = abs(n);
-    n = n / 100 + n % 10 * 10 + n % 100 / 10 * 100;
-    cout << "Число, полученное при перестановке цифр исходного числа = " << s << n;
+    if (!(n > 0))
+        return 0;
+    cout << "n!! = " << Fact2(n);
 }
