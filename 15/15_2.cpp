@@ -15,8 +15,10 @@ int Sign(double a)
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    double w;
+    double a, b;
     cout << "Введите вещественное число: ";
-    cin >> w;
-    cout << Sign(w);
+    cin >> a;
+    cout << "\nВведите вещественное число: ";
+    cin >> b;
+    cout << Sign(a) + Sign(b) ;
 }
