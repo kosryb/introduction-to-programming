@@ -3,11 +3,16 @@
 #include <locale.h>
 using namespace std;
 
+double PowerA3(double a)
+{
+    return pow(a, 3);
+}
+
 int main()
 {
-    setlocale(LC_ALL, "Rus");
-    int n;
-    cout << "Введите число n(количество байтов): ";
-    cin >> n;
-    cout << "Количество полных Кб в n байтах = " << n / 8;
+    setlocale(LC_ALL, "Russian");
+    double w;
+    cout << "Р’РІРµРґРёС‚Рµ РІРµС‰РµСЃС‚РІРµРЅРЅРѕРµ С‡РёСЃР»Рѕ: ";
+    cin >> w;
+    cout << "a^3 = " << PowerA3(w);
 }
