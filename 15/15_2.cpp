@@ -3,15 +3,20 @@
 #include <locale.h>
 using namespace std;
 
+int Sign(double a)
+{
+    if (a < 0)
+        return -1;
+    else if (a > 0)
+        return 1;
+    return 0;
+}
+
 int main()
 {
-    setlocale(LC_ALL, "Rus");
-    int a, b;
-    cout << "Введите положительные целые числа а и в, если a > b: ";
-    cin >> a >> b;
-    if (!(a > b)) {
-        cout << "Ошибка";
-        return 0;
-    }
-    cout << "Количество отрезков B, размещенных на отрезке A = " << a / b;
+    setlocale(LC_ALL, "Russian");
+    double w;
+    cout << "Р’РІРµРґРёС‚Рµ РІРµС‰РµСЃС‚РІРµРЅРЅРѕРµ С‡РёСЃР»Рѕ: ";
+    cin >> w;
+    cout << Sign(w);
 }
