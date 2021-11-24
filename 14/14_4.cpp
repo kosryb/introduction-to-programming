@@ -12,7 +12,7 @@ int main()
     cin >> n;
     if (n < 0 || n > 25)
         return 0;
-    while (s < 1100) {
+    while (s <= 1100) {
         s += s/n;
         k++;
     }
